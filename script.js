@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Hide the loader overlay after 3 seconds
     setTimeout(function () {
-        document.getElementById('loader-overlay').style.display = 'none';
+          document.getElementById('loader-overlay').style.display = 'none';
+    document.getElementById('website-content').style.display = 'block';
     }, 3000); // 3000 milliseconds = 3 seconds
 });
