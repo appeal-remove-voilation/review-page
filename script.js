@@ -1,9 +1,7 @@
-document.addEventListener('DOMContentLoaded', function () {
-    document.getElementById('loader-overlay').style.display = 'flex';
+document.getElementById('loader-overlay').style.display = 'flex';
+setTimeout(function () {
+    document.getElementById('loader-overlay').style.display = 'none';
 
-    // Hide the loader overlay after 3 seconds
-    setTimeout(function () {
-          document.getElementById('loader-overlay').style.display = 'none';
+    // Display the website content after 3 seconds
     document.getElementById('website-content').style.display = 'block';
-    }, 3000); // 3000 milliseconds = 3 seconds
-});
+}, 3000);
